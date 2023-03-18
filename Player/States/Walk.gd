@@ -5,7 +5,6 @@ func input(event: InputEvent) -> BaseState:
 		return jump_state
 	
 	elif Input.is_action_pressed("run"):
-		print('rna')
 		return run_state
 
 	return null

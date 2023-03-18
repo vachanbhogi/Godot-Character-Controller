@@ -11,6 +11,7 @@ extends BaseState
 @onready var run_state: BaseState = get_node(run_node)
 
 func enter() -> void:
+	player._anim_player.play(animation_name)
 	player.velocity = Vector3.ZERO
 
 func input(event: InputEvent) -> BaseState:

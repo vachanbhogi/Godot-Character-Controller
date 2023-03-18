@@ -15,6 +15,7 @@ extends BaseState
 @onready var run_state: BaseState = get_node(run_node)
 
 func enter() -> void:
+	player._anim_player.play(animation_name)
 	player.velocity.y = jump_force
 
 func physics_process(delta: float) -> BaseState:
